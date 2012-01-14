@@ -106,18 +106,18 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	// add present devices, and arm the notification system
 	NSMutableArray *presentLocationIDs = [NSMutableArray array];
 	io_object_t hidInterface;
-	while (hidInterface = IOIteratorNext(deviceAddedIterator)) {
+	while ((hidInterface = IOIteratorNext(deviceAddedIterator))) {
 		NSNumber *locationID = [AGHIDManager locationIDOfHIDInterface:&hidInterface];
 		IOObjectRelease(hidInterface);
 		if (locationID && ![presentLocationIDs containsObject:locationID]) {
 			[presentLocationIDs addObject:locationID];
 		}
 	}
-	while (hidInterface = IOIteratorNext(deviceRemovedIterator)) {
+	while ((hidInterface = IOIteratorNext(deviceRemovedIterator))) {
 		// we shouldn't ever enter this block
 		IOObjectRelease(hidInterface);
 	}
-	unsigned int i, count = [presentLocationIDs count];
+	NSUInteger i, count = [presentLocationIDs count];
 	for (i = 0; i < count; i++) {
 		NSNumber *locationID = [presentLocationIDs objectAtIndex:i];
 		[AGHIDManager addDeviceHavingLocationID:locationID];
@@ -159,7 +159,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	IOServiceGetMatchingServices(kIOMasterPortDefault,
 								 matchLocation,
 								 &iterator);
-	unsigned int i, count = [interfaces count];
+	NSUInteger i, count = [interfaces count];
 	for (i = 0; i < count; i++) {
 		IOReturn result;
 		ioInterface = IOIteratorNext(iterator);
@@ -227,7 +227,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 		}
 		// loop through the interface's element's, adding them to the queue
 		NSArray *cookies = [elements allKeys];
-		unsigned int j, numCookies = [cookies count];
+		NSUInteger j, numCookies = [cookies count];
 		for (j = 0; j < numCookies; j++) {
 			// what size should I use here?
 			IOHIDElementCookie cookie =
@@ -268,7 +268,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	//	  [[devices objectForKey:locationID] valueForKey:AG_NAME_KEY]);
 	NSArray *interfaces = [[devices objectForKey:locationID] valueForKey:AG_INTERFACES_KEY];
 		
-	unsigned int i, count = [interfaces count];
+	NSUInteger i, count = [interfaces count];
 	for (i = 0; i < count; i++) {
 		NSValue *wrappedConnector = [[interfaces objectAtIndex:i] valueForKey:AG_CONNECTOR_KEY];
 		Connector *connector = (Connector *)[wrappedConnector pointerValue];
@@ -325,7 +325,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	arrayCallbacks.retain = NULL;
 	arrayCallbacks.release = NULL;
 	NSMutableArray *managersForDevice = (NSMutableArray *)CFArrayCreateMutable(kCFAllocatorDefault, 0, &arrayCallbacks);
-	unsigned int i, count = [managers count];
+	NSUInteger i, count = [managers count];
 	for (i = 0; i < count; i++) {
 		AGHIDManager *manager = [managers objectAtIndex:i];
 		if ([[manager locationIDOfSelectedDevice] isEqualToNumber:locationID]) {
@@ -352,7 +352,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	NSString *deviceName = nil;
 	io_object_t ioInterface;
 	unsigned int numberOfInterfaces = 0;
-	while( ioInterface = IOIteratorNext(interfaceIterator)) {
+	while ((ioInterface = IOIteratorNext(interfaceIterator))) {
 		// if something goes wrong, call release everything and return 
 		NSMutableDictionary *interface = [[NSMutableDictionary alloc] init];
 		[interfacesOfDevice addObject:interface];
@@ -378,7 +378,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 		(*hidDeviceInterface)->copyMatchingElements(hidDeviceInterface, NULL, (CFArrayRef *)&elements);
 		(*hidDeviceInterface)->Release(hidDeviceInterface);
 		NSMutableDictionary *inputElements = [[NSMutableDictionary alloc] init];
-		unsigned int i, count = [elements count];
+		NSUInteger i, count = [elements count];
 		for (i = 0; i < count; i++) {
 			NSDictionary *element = [elements objectAtIndex:i];
 			//NSLog(@"%@", [element valueForKey:@kIOHIDElementTypeKey]);
@@ -551,7 +551,7 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 	CFMutableDictionaryRef matchingDictionary = IOServiceMatching(kIOHIDDeviceKey);
 	[(NSMutableDictionary *)matchingDictionary addEntriesFromDictionary:deviceMatchingCriteria];
 	IOServiceGetMatchingServices(kIOMasterPortDefault, matchingDictionary, &iterator);
-	while (interface = IOIteratorNext(iterator)) {
+	while ((interface = IOIteratorNext(iterator))) {
 		CFNumberRef location = IORegistryEntryCreateCFProperty(interface,
 															   CFSTR(kIOHIDLocationIDKey),
 															   kCFAllocatorDefault,
@@ -600,14 +600,14 @@ static void hidWasAddedCallback(void *refCon, io_iterator_t iterator)
 	// add new devices, connect if necessary, and arm the notification system
 	NSMutableArray *addedLocationIDs = [NSMutableArray array];
 	io_object_t hidInterface;
-	while (hidInterface = IOIteratorNext(iterator)) {
+	while ((hidInterface = IOIteratorNext(iterator))) {
 		NSNumber *locationID = [AGHIDManager locationIDOfHIDInterface:&hidInterface];
 		IOObjectRelease(hidInterface);
 		if (![addedLocationIDs containsObject:locationID]) {
 			[addedLocationIDs addObject:locationID];
 		}
 	}
-	unsigned int i, count = [addedLocationIDs count];
+	NSUInteger i, count = [addedLocationIDs count];
 	for (i = 0; i < count; i++) {
 		NSNumber *locationID = [addedLocationIDs objectAtIndex:i];
 		NSDictionary *device = [devices objectForKey:locationID];
@@ -653,14 +653,14 @@ static void hidWasRemovedCallback(void *refCon, io_iterator_t iterator)
 	// disconnect removed devices, and re-arm the notification system
 	NSMutableArray *removedLocationIDs = [NSMutableArray array];
 	io_object_t hidInterface;
-	while (hidInterface = IOIteratorNext(iterator)) {
+	while ((hidInterface = IOIteratorNext(iterator))) {
 		NSNumber *locationID = [AGHIDManager locationIDOfHIDInterface:&hidInterface];
 		IOObjectRelease(hidInterface);
 		if (![removedLocationIDs containsObject:locationID]) {
 			[removedLocationIDs addObject:locationID];
 		}
 	}
-	unsigned int i, count = [removedLocationIDs count];
+	NSUInteger i, count = [removedLocationIDs count];
 	for (i = 0; i < count; i++) {
 		NSNumber *locationID = [removedLocationIDs objectAtIndex:i];
 		[currentlyAttachedDevices removeObject:locationID];
@@ -724,7 +724,7 @@ void eventCallback(void *target, IOReturn result, void *refcon, void *sender) {
 		SInt32 maxValue = [[element valueForKey:AG_ELEMENT_MAX_KEY] intValue];
 		BOOL isRelative = [[element valueForKey:AG_ELEMENT_IS_RELATIVE_KEY] boolValue];
 		
-		unsigned int i, count = [managers count];
+		NSUInteger i, count = [managers count];
 		for (i = 0; i < count; i++) {
 			AGHIDManager *manager = [managers objectAtIndex:i];
 			id delegate = [manager delegate];

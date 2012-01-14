@@ -48,7 +48,6 @@
 		B7ECBFC214C1365800285F26 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		B7ECBFC314C1365800285F26 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		B7ECBFC414C1365800285F26 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
-		B7ECBFC514C1365800285F26 /* helperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helperFunctions.h; sourceTree = "<group>"; };
 		B7ECBFC614C1365800285F26 /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrics.h; sourceTree = "<group>"; };
 		B7ECBFC714C1365800285F26 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		B7ECBFC814C1365800285F26 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 				B7ECBFC214C1365800285F26 /* Ball.m */,
 				B7ECBFC314C1365800285F26 /* GameView.h */,
 				B7ECBFC414C1365800285F26 /* GameView.m */,
-				B7ECBFC514C1365800285F26 /* helperFunctions.h */,
 				B7ECBFC614C1365800285F26 /* Metrics.h */,
 				B7ECBFC714C1365800285F26 /* Player.h */,
 				B7ECBFC814C1365800285F26 /* Player.m */,

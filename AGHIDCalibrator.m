@@ -87,11 +87,11 @@ typedef struct _ElementInfo {
 
 - (void)dealloc {
 	NSArray *interfaces = [registry allValues];
-	unsigned int i, count = [interfaces count];
+	NSUInteger i, count = [interfaces count];
 	for (i = 0; i < count; i++) {
 		NSDictionary *interface = [interfaces objectAtIndex:i];
 		NSArray *elements = [interface allValues];
-		unsigned int j, numElements = [interfaces count];
+		NSUInteger j, numElements = [interfaces count];
 		for (j = 0; j < numElements; j++) {
 			ElementInfo *elementInfo = [[elements objectAtIndex:j] pointerValue];
 			free(elementInfo);
