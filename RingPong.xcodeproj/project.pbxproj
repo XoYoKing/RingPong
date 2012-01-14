@@ -13,6 +13,13 @@
 		B77CE50914C134F500F92D45 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50714C134F500F92D45 /* Credits.rtf */; };
 		B77CE50C14C134F500F92D45 /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77CE50B14C134F500F92D45 /* AGAppDelegate.m */; };
 		B77CE50F14C134F500F92D45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50D14C134F500F92D45 /* MainMenu.xib */; };
+		B7ECBFCB14C1365800285F26 /* AGHIDCalibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */; };
+		B7ECBFCC14C1365800285F26 /* AGHIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFBE14C1365800285F26 /* AGHIDManager.m */; };
+		B7ECBFCD14C1365800285F26 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC014C1365800285F26 /* AppController.m */; };
+		B7ECBFCE14C1365800285F26 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC214C1365800285F26 /* Ball.m */; };
+		B7ECBFCF14C1365800285F26 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC414C1365800285F26 /* GameView.m */; };
+		B7ECBFD014C1365800285F26 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC814C1365800285F26 /* Player.m */; };
+		B7ECBFD114C1365800285F26 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFCA14C1365800285F26 /* Scene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,22 @@
 		B77CE50A14C134F500F92D45 /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
 		B77CE50B14C134F500F92D45 /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
 		B77CE50E14C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B7ECBFBB14C1365800285F26 /* AGHIDCalibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGHIDCalibrator.h; sourceTree = "<group>"; };
+		B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHIDCalibrator.m; sourceTree = "<group>"; };
+		B7ECBFBD14C1365800285F26 /* AGHIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGHIDManager.h; sourceTree = "<group>"; };
+		B7ECBFBE14C1365800285F26 /* AGHIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHIDManager.m; sourceTree = "<group>"; };
+		B7ECBFBF14C1365800285F26 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		B7ECBFC014C1365800285F26 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		B7ECBFC114C1365800285F26 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		B7ECBFC214C1365800285F26 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		B7ECBFC314C1365800285F26 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		B7ECBFC414C1365800285F26 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		B7ECBFC514C1365800285F26 /* helperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helperFunctions.h; sourceTree = "<group>"; };
+		B7ECBFC614C1365800285F26 /* Metrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrics.h; sourceTree = "<group>"; };
+		B7ECBFC714C1365800285F26 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B7ECBFC814C1365800285F26 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		B7ECBFC914C1365800285F26 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		B7ECBFCA14C1365800285F26 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +69,22 @@
 		B77CE4E914C134F500F92D45 = {
 			isa = PBXGroup;
 			children = (
+				B7ECBFBB14C1365800285F26 /* AGHIDCalibrator.h */,
+				B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */,
+				B7ECBFBD14C1365800285F26 /* AGHIDManager.h */,
+				B7ECBFBE14C1365800285F26 /* AGHIDManager.m */,
+				B7ECBFBF14C1365800285F26 /* AppController.h */,
+				B7ECBFC014C1365800285F26 /* AppController.m */,
+				B7ECBFC114C1365800285F26 /* Ball.h */,
+				B7ECBFC214C1365800285F26 /* Ball.m */,
+				B7ECBFC314C1365800285F26 /* GameView.h */,
+				B7ECBFC414C1365800285F26 /* GameView.m */,
+				B7ECBFC514C1365800285F26 /* helperFunctions.h */,
+				B7ECBFC614C1365800285F26 /* Metrics.h */,
+				B7ECBFC714C1365800285F26 /* Player.h */,
+				B7ECBFC814C1365800285F26 /* Player.m */,
+				B7ECBFC914C1365800285F26 /* Scene.h */,
+				B7ECBFCA14C1365800285F26 /* Scene.m */,
 				B77CE4FE14C134F500F92D45 /* RingPong */,
 				B77CE4F714C134F500F92D45 /* Frameworks */,
 				B77CE4F514C134F500F92D45 /* Products */,
@@ -167,6 +206,13 @@
 			files = (
 				B77CE50514C134F500F92D45 /* main.m in Sources */,
 				B77CE50C14C134F500F92D45 /* AGAppDelegate.m in Sources */,
+				B7ECBFCB14C1365800285F26 /* AGHIDCalibrator.m in Sources */,
+				B7ECBFCC14C1365800285F26 /* AGHIDManager.m in Sources */,
+				B7ECBFCD14C1365800285F26 /* AppController.m in Sources */,
+				B7ECBFCE14C1365800285F26 /* Ball.m in Sources */,
+				B7ECBFCF14C1365800285F26 /* GameView.m in Sources */,
+				B7ECBFD014C1365800285F26 /* Player.m in Sources */,
+				B7ECBFD114C1365800285F26 /* Scene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +332,7 @@
 				B77CE51414C134F500F92D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
