@@ -20,6 +20,8 @@
 		B7ECBFCF14C1365800285F26 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC414C1365800285F26 /* GameView.m */; };
 		B7ECBFD014C1365800285F26 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC814C1365800285F26 /* Player.m */; };
 		B7ECBFD114C1365800285F26 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFCA14C1365800285F26 /* Scene.m */; };
+		B7ECBFD414C1390500285F26 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ECBFD314C1390500285F26 /* IOKit.framework */; };
+		B7ECBFD614C1391800285F26 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7ECBFD514C1391800285F26 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		B7ECBFC814C1365800285F26 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		B7ECBFC914C1365800285F26 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		B7ECBFCA14C1365800285F26 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
+		B7ECBFD314C1390500285F26 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		B7ECBFD514C1391800285F26 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7ECBFD614C1391800285F26 /* OpenGL.framework in Frameworks */,
+				B7ECBFD414C1390500285F26 /* IOKit.framework in Frameworks */,
 				B77CE4F914C134F500F92D45 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +75,8 @@
 		B77CE4E914C134F500F92D45 = {
 			isa = PBXGroup;
 			children = (
+				B7ECBFD514C1391800285F26 /* OpenGL.framework */,
+				B7ECBFD314C1390500285F26 /* IOKit.framework */,
 				B7ECBFBB14C1365800285F26 /* AGHIDCalibrator.h */,
 				B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */,
 				B7ECBFBD14C1365800285F26 /* AGHIDManager.h */,
