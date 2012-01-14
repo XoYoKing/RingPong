@@ -21,12 +21,12 @@
 		B77CE4FB14C134F500F92D45 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		B77CE4FC14C134F500F92D45 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B77CE4FD14C134F500F92D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B77CE50014C134F500F92D45 /* RingPong-Info.plist */ = {isa = PBXFileReference; path = "RingPong-Info.plist"; sourceTree = "<group>"; };
+		B77CE50014C134F500F92D45 /* RingPong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RingPong-Info.plist"; sourceTree = "<group>"; };
 		B77CE50214C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B77CE50414C134F500F92D45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B77CE50614C134F500F92D45 /* RingPong-Prefix.pch */ = {isa = PBXFileReference; path = "RingPong-Prefix.pch"; sourceTree = "<group>"; };
+		B77CE50614C134F500F92D45 /* RingPong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RingPong-Prefix.pch"; sourceTree = "<group>"; };
 		B77CE50814C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		B77CE50A14C134F500F92D45 /* AGAppDelegate.h */ = {isa = PBXFileReference; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		B77CE50A14C134F500F92D45 /* AGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGAppDelegate.h; sourceTree = "<group>"; };
 		B77CE50B14C134F500F92D45 /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
 		B77CE50E14C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
