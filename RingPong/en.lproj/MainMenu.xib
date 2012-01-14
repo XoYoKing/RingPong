@@ -1188,7 +1188,7 @@
 						<object class="NSMenu" key="NSSubmenu" id="466310130">
 							<string key="NSTitle">View</string>
 							<array class="NSMutableArray" key="NSMenuItems">
-								<object class="NSMenuItem" id="880426319">
+								<object class="NSMenuItem" id="701406778">
 									<reference key="NSMenu" ref="466310130"/>
 									<string key="NSTitle">Enter Full Screen</string>
 									<string key="NSKeyEquiv">f</string>
@@ -1197,7 +1197,7 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="200634555">
+								<object class="NSMenuItem" id="799935186">
 									<reference key="NSMenu" ref="466310130"/>
 									<bool key="NSIsDisabled">YES</bool>
 									<bool key="NSIsSeparator">YES</bool>
@@ -1328,7 +1328,6 @@
 							<string key="NSFrameSize">{480, 360}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1192</string>
 							<string key="NSClassName">GameView</string>
 						</object>
@@ -2054,9 +2053,17 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">toggleFullScreen:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="880426319"/>
+						<reference key="destination" ref="701406778"/>
 					</object>
 					<int key="connectionID">546</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">scene</string>
+						<reference key="source" ref="496791455"/>
+						<reference key="destination" ref="505257823"/>
+					</object>
+					<int key="connectionID">547</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2489,8 +2496,8 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="102151532"/>
 							<reference ref="237841660"/>
-							<reference ref="880426319"/>
-							<reference ref="200634555"/>
+							<reference ref="701406778"/>
+							<reference ref="799935186"/>
 						</array>
 						<reference key="parent" ref="586577488"/>
 					</object>
@@ -3074,12 +3081,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">544</int>
-						<reference key="object" ref="880426319"/>
+						<reference key="object" ref="701406778"/>
 						<reference key="parent" ref="466310130"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">545</int>
-						<reference key="object" ref="200634555"/>
+						<reference key="object" ref="799935186"/>
 						<reference key="parent" ref="466310130"/>
 					</object>
 				</array>
@@ -3248,7 +3255,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">546</int>
+			<int key="maxID">547</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
