@@ -34,7 +34,9 @@
 	
 	// see file:///Developer/ADC%20Reference%20Library/documentation/Performance/Conceptual/Drawing/Articles/FlushingContent.html
 	float refreshRate = 60; // Assume LCD screen
-    CFDictionaryRef modeInfo = CGDisplayCurrentMode(CGMainDisplayID());
+    /*
+    //CGDisplayModeRef displayMode = CGDisplayCopyDisplayMode(CGMainDisplayID());
+    CGDisplayModeRef displayMode = CGDisplayCopyDisplayMode(kCGDirectMainDisplay);
     if (modeInfo) {
         CFNumberRef value = (CFNumberRef) CFDictionaryGetValue(modeInfo, kCGDisplayRefreshRate);
         if (value) {
@@ -42,7 +44,7 @@
             if (refreshRate == 0) refreshRate = 60; // Assume LCD screen
             CFRelease(value);
         }
-	}
+	}*/
 	timeBetweenFrames = 1.0 / refreshRate;
 	
 	
