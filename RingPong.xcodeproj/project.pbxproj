@@ -15,7 +15,6 @@
 		B77CE50F14C134F500F92D45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50D14C134F500F92D45 /* MainMenu.xib */; };
 		B7ECBFCB14C1365800285F26 /* AGHIDCalibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */; };
 		B7ECBFCC14C1365800285F26 /* AGHIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFBE14C1365800285F26 /* AGHIDManager.m */; };
-		B7ECBFCD14C1365800285F26 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC014C1365800285F26 /* AppController.m */; };
 		B7ECBFCE14C1365800285F26 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC214C1365800285F26 /* Ball.m */; };
 		B7ECBFCF14C1365800285F26 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC414C1365800285F26 /* GameView.m */; };
 		B7ECBFD014C1365800285F26 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECBFC814C1365800285F26 /* Player.m */; };
@@ -42,8 +41,6 @@
 		B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHIDCalibrator.m; sourceTree = "<group>"; };
 		B7ECBFBD14C1365800285F26 /* AGHIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGHIDManager.h; sourceTree = "<group>"; };
 		B7ECBFBE14C1365800285F26 /* AGHIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHIDManager.m; sourceTree = "<group>"; };
-		B7ECBFBF14C1365800285F26 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		B7ECBFC014C1365800285F26 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		B7ECBFC114C1365800285F26 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		B7ECBFC214C1365800285F26 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		B7ECBFC314C1365800285F26 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
@@ -80,8 +77,6 @@
 				B7ECBFBC14C1365800285F26 /* AGHIDCalibrator.m */,
 				B7ECBFBD14C1365800285F26 /* AGHIDManager.h */,
 				B7ECBFBE14C1365800285F26 /* AGHIDManager.m */,
-				B7ECBFBF14C1365800285F26 /* AppController.h */,
-				B7ECBFC014C1365800285F26 /* AppController.m */,
 				B7ECBFC114C1365800285F26 /* Ball.h */,
 				B7ECBFC214C1365800285F26 /* Ball.m */,
 				B7ECBFC314C1365800285F26 /* GameView.h */,
@@ -214,7 +209,6 @@
 				B77CE50C14C134F500F92D45 /* AGAppDelegate.m in Sources */,
 				B7ECBFCB14C1365800285F26 /* AGHIDCalibrator.m in Sources */,
 				B7ECBFCC14C1365800285F26 /* AGHIDManager.m in Sources */,
-				B7ECBFCD14C1365800285F26 /* AppController.m in Sources */,
 				B7ECBFCE14C1365800285F26 /* Ball.m in Sources */,
 				B7ECBFCF14C1365800285F26 /* GameView.m in Sources */,
 				B7ECBFD014C1365800285F26 /* Player.m in Sources */,

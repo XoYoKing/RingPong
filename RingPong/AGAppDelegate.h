@@ -7,9 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GameView.h"
+#import "Scene.h"
 
-@interface AGAppDelegate : NSObject <NSApplicationDelegate>
+@interface AGAppDelegate : NSObject <NSApplicationDelegate> {
+    NSTimer *refreshTimer;
+	float timeBetweenFrames;
+	NSOpenGLContext *fullScreenContext;
+	BOOL fullScreen;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet GameView *view;
+@property (assign) IBOutlet Scene *scene;
 
+- (IBAction)toggleFullScreen:(id)sender;
 @end
+
