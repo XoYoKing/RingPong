@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B77CE4F914C134F500F92D45 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77CE4F814C134F500F92D45 /* Cocoa.framework */; };
+		B77CE50314C134F500F92D45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50114C134F500F92D45 /* InfoPlist.strings */; };
+		B77CE50514C134F500F92D45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77CE50414C134F500F92D45 /* main.m */; };
+		B77CE50914C134F500F92D45 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50714C134F500F92D45 /* Credits.rtf */; };
+		B77CE50C14C134F500F92D45 /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77CE50B14C134F500F92D45 /* AGAppDelegate.m */; };
+		B77CE50F14C134F500F92D45 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77CE50D14C134F500F92D45 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B77CE4F414C134F500F92D45 /* RingPong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingPong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77CE4F814C134F500F92D45 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B77CE4FB14C134F500F92D45 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B77CE4FC14C134F500F92D45 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B77CE4FD14C134F500F92D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B77CE50014C134F500F92D45 /* RingPong-Info.plist */ = {isa = PBXFileReference; path = "RingPong-Info.plist"; sourceTree = "<group>"; };
+		B77CE50214C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B77CE50414C134F500F92D45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B77CE50614C134F500F92D45 /* RingPong-Prefix.pch */ = {isa = PBXFileReference; path = "RingPong-Prefix.pch"; sourceTree = "<group>"; };
+		B77CE50814C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B77CE50A14C134F500F92D45 /* AGAppDelegate.h */ = {isa = PBXFileReference; path = AGAppDelegate.h; sourceTree = "<group>"; };
+		B77CE50B14C134F500F92D45 /* AGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGAppDelegate.m; sourceTree = "<group>"; };
+		B77CE50E14C134F500F92D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B77CE4F114C134F500F92D45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77CE4F914C134F500F92D45 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B77CE4E914C134F500F92D45 = {
+			isa = PBXGroup;
+			children = (
+				B77CE4FE14C134F500F92D45 /* RingPong */,
+				B77CE4F714C134F500F92D45 /* Frameworks */,
+				B77CE4F514C134F500F92D45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B77CE4F514C134F500F92D45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B77CE4F414C134F500F92D45 /* RingPong.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B77CE4F714C134F500F92D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77CE4F814C134F500F92D45 /* Cocoa.framework */,
+				B77CE4FA14C134F500F92D45 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B77CE4FA14C134F500F92D45 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77CE4FB14C134F500F92D45 /* AppKit.framework */,
+				B77CE4FC14C134F500F92D45 /* CoreData.framework */,
+				B77CE4FD14C134F500F92D45 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B77CE4FE14C134F500F92D45 /* RingPong */ = {
+			isa = PBXGroup;
+			children = (
+				B77CE50A14C134F500F92D45 /* AGAppDelegate.h */,
+				B77CE50B14C134F500F92D45 /* AGAppDelegate.m */,
+				B77CE50D14C134F500F92D45 /* MainMenu.xib */,
+				B77CE4FF14C134F500F92D45 /* Supporting Files */,
+			);
+			path = RingPong;
+			sourceTree = "<group>";
+		};
+		B77CE4FF14C134F500F92D45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B77CE50014C134F500F92D45 /* RingPong-Info.plist */,
+				B77CE50114C134F500F92D45 /* InfoPlist.strings */,
+				B77CE50414C134F500F92D45 /* main.m */,
+				B77CE50614C134F500F92D45 /* RingPong-Prefix.pch */,
+				B77CE50714C134F500F92D45 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B77CE4F314C134F500F92D45 /* RingPong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77CE51214C134F500F92D45 /* Build configuration list for PBXNativeTarget "RingPong" */;
+			buildPhases = (
+				B77CE4F014C134F500F92D45 /* Sources */,
+				B77CE4F114C134F500F92D45 /* Frameworks */,
+				B77CE4F214C134F500F92D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingPong;
+			productName = RingPong;
+			productReference = B77CE4F414C134F500F92D45 /* RingPong.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B77CE4EB14C134F500F92D45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B77CE4EE14C134F500F92D45 /* Build configuration list for PBXProject "RingPong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B77CE4E914C134F500F92D45;
+			productRefGroup = B77CE4F514C134F500F92D45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B77CE4F314C134F500F92D45 /* RingPong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B77CE4F214C134F500F92D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77CE50314C134F500F92D45 /* InfoPlist.strings in Resources */,
+				B77CE50914C134F500F92D45 /* Credits.rtf in Resources */,
+				B77CE50F14C134F500F92D45 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B77CE4F014C134F500F92D45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77CE50514C134F500F92D45 /* main.m in Sources */,
+				B77CE50C14C134F500F92D45 /* AGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B77CE50114C134F500F92D45 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77CE50214C134F500F92D45 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B77CE50714C134F500F92D45 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77CE50814C134F500F92D45 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B77CE50D14C134F500F92D45 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77CE50E14C134F500F92D45 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B77CE51014C134F500F92D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B77CE51114C134F500F92D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B77CE51314C134F500F92D45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingPong/RingPong-Prefix.pch";
+				INFOPLIST_FILE = "RingPong/RingPong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B77CE51414C134F500F92D45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingPong/RingPong-Prefix.pch";
+				INFOPLIST_FILE = "RingPong/RingPong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B77CE4EE14C134F500F92D45 /* Build configuration list for PBXProject "RingPong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77CE51014C134F500F92D45 /* Debug */,
+				B77CE51114C134F500F92D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B77CE51214C134F500F92D45 /* Build configuration list for PBXNativeTarget "RingPong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77CE51314C134F500F92D45 /* Debug */,
+				B77CE51414C134F500F92D45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B77CE4EB14C134F500F92D45 /* Project object */;
+}

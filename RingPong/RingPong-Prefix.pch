@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RingPong' target in the 'RingPong' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
