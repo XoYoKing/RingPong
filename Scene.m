@@ -11,7 +11,7 @@
 
 - (id)init {
 	if (self = [super init]) {
-		srandom(time(NULL));
+        srandomdev();
 		allPlayers = [[NSMutableDictionary alloc] init];
 		ceo = [[AGHIDManager alloc] init];
 		[ceo setDelegate:self];
@@ -27,7 +27,7 @@
 
 - (void)deviceListDidChangeForHIDManager:(AGHIDManager *)manager {
 	NSArray *newLocationIDs = [manager deviceList];
-	unsigned int i, count = [newLocationIDs count];
+	NSUInteger i, count = [newLocationIDs count];
 	for (i = 0; i < count; i++) {
 		NSNumber *locationID = [newLocationIDs objectAtIndex:i];
 		if ([allPlayers objectForKey:locationID] == nil) {
@@ -113,10 +113,10 @@
 
 // returns the next available player, or nil if none are available
 - (Player *)playerAfterPlayer:(Player *)currentPlayer {
-	unsigned int indexOfCurrentPlayer = [playersForThisRound indexOfObject:currentPlayer];
-	unsigned int i;
+	NSUInteger indexOfCurrentPlayer = [playersForThisRound indexOfObject:currentPlayer];
+	NSUInteger i;
 	for (i = 0; i < numPlayersForThisRound; i++) {
-		unsigned int indexToCheck = (i + indexOfCurrentPlayer + 1) % numPlayersForThisRound;
+		NSUInteger indexToCheck = (i + indexOfCurrentPlayer + 1) % numPlayersForThisRound;
 		Player *playerToCheck = [playersForThisRound objectAtIndex:indexToCheck];
 		unsigned int code = [playerToCheck state]->code;
 		if (code == AG_PLAYER_STATE_NOT_CURRENT) {
@@ -236,7 +236,7 @@
 		}
 		
 		// render all remaining players
-		unsigned int i, numberOfPlayersToRender = [playersToRender count];
+		NSUInteger i, numberOfPlayersToRender = [playersToRender count];
 		for (i = 0; i < numberOfPlayersToRender; i++) {
 			Player *player = [playersToRender objectAtIndex:i];
 			AGPlayerState *state = [player state];
@@ -322,7 +322,7 @@
     [currentGLContext flushBuffer];
 	
 	// sync to vertical refresh rate
-	long newVBLState = 1;
+	GLint newVBLState = 1;
 	[currentGLContext setValues:&newVBLState
 				   forParameter:NSOpenGLCPSwapInterval];
 	

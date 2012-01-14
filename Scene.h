@@ -11,7 +11,7 @@
 	NSMutableDictionary *allPlayers;
 	
 	NSArray *playersForThisRound;
-	unsigned int numPlayersForThisRound;
+	NSUInteger numPlayersForThisRound;
 	
 	Ball *ball;
 	BOOL ballIsOutOfBounds;
