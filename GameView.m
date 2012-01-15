@@ -6,14 +6,14 @@
 
 - (id)initWithFrame:(NSRect)frameRect {
 	NSOpenGLPixelFormatAttribute pixelFormatAttributes [] = {
-        NSOpenGLPFAWindow,
-        NSOpenGLPFASingleRenderer,
-        NSOpenGLPFANoRecovery,
-        NSOpenGLPFAScreenMask,
-        CGDisplayIDToOpenGLDisplayMask(kCGDirectMainDisplay),
         NSOpenGLPFADoubleBuffer,
-		NSOpenGLPFAAccelerated,
-		0
+        NSOpenGLPFAAccelerated,
+        NSOpenGLPFAPixelBuffer,
+        NSOpenGLPFASampleBuffers, (NSOpenGLPixelFormatAttribute)8,
+        NSOpenGLPFASamples, (NSOpenGLPixelFormatAttribute)32,
+        NSOpenGLPFAMultisample,
+        NSOpenGLPFADepthSize, (NSOpenGLPixelFormatAttribute)32,
+        (NSOpenGLPixelFormatAttribute)nil
     };
 	NSOpenGLPixelFormat *pixelFormat = 
 		[[[NSOpenGLPixelFormat alloc] initWithAttributes:pixelFormatAttributes] autorelease];
