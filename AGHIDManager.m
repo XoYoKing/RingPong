@@ -253,7 +253,9 @@ static void MyCreateHIDDeviceInterface(io_object_t hidDevice,
 			connector->queue = NULL;
 			break;
 		}
-		(*(connector->interface))->close(connector->interface);
+		// In 10.7, it looks like this is no longer a valid thing to do!
+		// TODO Find out why!
+		//(*(connector->interface))->close(connector->interface);
 	}
 	IOObjectRelease(iterator);
 }
