@@ -168,7 +168,7 @@
 		B77CE4EB14C134F500F92D45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = B77CE4EE14C134F500F92D45 /* Build configuration list for PBXProject "RingPong" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -294,6 +294,7 @@
 		B77CE51314C134F500F92D45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RingPong/RingPong-Prefix.pch";
 				INFOPLIST_FILE = "RingPong/RingPong-Info.plist";
@@ -305,6 +306,7 @@
 		B77CE51414C134F500F92D45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RingPong/RingPong-Prefix.pch";
 				INFOPLIST_FILE = "RingPong/RingPong-Info.plist";
