@@ -36,4 +36,5 @@ typedef struct _AGPlayerState {
 - (void)advanceTimeBySeconds:(CFAbsoluteTime)seconds;
 - (AGPlayerState *)state; // because I'm returning a pointer, the struct can be modified by Scene
 - (NSComparisonResult)compareAlpha:(Player *)otherPlayer;
+- (NSComparisonResult)compareGreen:(Player *)otherPlayer;
 @end
